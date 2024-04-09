@@ -8,6 +8,7 @@ alert ("A média é: " + media)
 
     if (media >= 7){
         alert ("Parabéns! Você foi aprovado.")
+        //console.log(`O número ${numero} é par`)
     }else
         if( media >=5){
            alert("Aluno em recuperação.") 
