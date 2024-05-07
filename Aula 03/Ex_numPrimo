@@ -1,0 +1,46 @@
+------------------------------------
+Exercício:
+Determinar se um número é Primo.
+-------------------------------------
+Definição: um número primo é um número
+natural que é divisível apenas 
+por ele mesmo e por 1.
+-------------------------------------
+Exemplos de números primos:
+  2, 3, 5, 7, 11, 13, 17, ...
+-------------------------------------
+Exemplos de números não primos:
+  4, 6, 8, 9, 10, 12, 14, 15, ...
+-------------------------------------
+Algoritmo para Determinar se o Número é Primo
+ 
+Entrada: numero
+ 
+ 
+Se(numero < 2)então
+início
+  escreva("O número NÃO É primo")
+fim
+Senão
+Início  
+	ehPrimo <- VERDADEIRO
+	Para i<-2 até (numero-1) faça
+	início
+		resto <- numero mod i
+		se(resto == 0)então	
+			início
+			ehPrimo <- FALSO
+			terminar    
+		fim 
+	fim
+	Se(ehPrimo)então
+	início
+		escreva("O número É primo")
+		terminar
+	fim
+	Senão
+	início
+		escreva("O número NÃO É primo")
+		terminar
+	fim
+----------------------
