@@ -1,0 +1,13 @@
+contador<-0
+Para i<-numero até 2 faça
+início
+  Se(ehPrimo(i))Então
+  início
+    escreva(i)
+	contador<-contador+1
+  fim
+  Se(contador==10)Então
+  início
+    break
+  fim
+fim
