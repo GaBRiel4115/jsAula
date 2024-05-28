@@ -1,0 +1,50 @@
+//construir uma função para calcular o fatorial de um número
+/**
+ * fat(n) = fat(n-1)*n
+ * outra forma:
+ * fat(n)=n*(n-1)*(n-2)*...*1
+ */
+function fatorial(n){
+    let resultado=1;
+    for(let k=n;k>=1;k--){
+        resultado = resultado * k;
+    }
+    return resultado;
+}
+ 
+//construir uma função para calcular o somatório de uma
+//Progressão Aritmética de Razão 1 que começa em 1
+//e vai até um determinado número
+/**
+  * somatorio(n) = 1 + 2 +...+ (n-2) + (n-1) + n
+ */
+function somatorio(n){
+    let resultado=0;
+    for(let k=1;k<=n;k++){
+        resultado = resultado + k;
+    }
+    return resultado;
+}
+//construir uma função para calcular o somatório de uma
+//Progressão Aritmética de Razão 3 que começa em 1
+//e vai até um determinado número
+/**
+  * somatorio(n) = 1 + 4 + 7+ 10 +...+ (n-3) + n
+ */
+function somatorio_razao3(n){
+    let resultado=0;
+    for(let k=1;k<=n;k+=3){
+        //CORRIGIR O CÓDIGO
+
+        resultado = resultado + k;
+    }
+    return resultado;
+}
+ 
+ 
+ 
+let numero = parseFloat(prompt("Digite um número:"))
+ 
+alert("O fatorial de ["+numero+"] é"+fatorial(numero))
+alert("O somatório de ["+numero+"] é"+somatorio(numero))
+alert("O somatório de razão 3 de 1 até ["+numero+"] é"+somatorio_razao3(numero))
